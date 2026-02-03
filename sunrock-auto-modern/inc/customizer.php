@@ -10,6 +10,65 @@ if (!defined('ABSPATH')) {
 }
 
 add_action('customize_register', function (WP_Customize_Manager $wp_customize) {
+	$wp_customize->add_section('sunrock_auto_modern_language', [
+		'title'       => esc_html__('Language Landing (Sunrock)', 'sunrock-auto-modern'),
+		'description' => esc_html__('Create a landing page that lets visitors choose English or Traditional Chinese.', 'sunrock-auto-modern'),
+		'priority'    => 29,
+	]);
+
+	$wp_customize->add_setting('sunrock_enable_language_landing', [
+		'default'           => false,
+		'sanitize_callback' => 'rest_sanitize_boolean',
+	]);
+	$wp_customize->add_control('sunrock_enable_language_landing', [
+		'type'        => 'checkbox',
+		'section'     => 'sunrock_auto_modern_language',
+		'label'       => esc_html__('Enable language selection on the front page', 'sunrock-auto-modern'),
+		'description' => esc_html__('If enabled, the front page will show a language picker instead of the homepage sections.', 'sunrock-auto-modern'),
+	]);
+
+	$wp_customize->add_setting('sunrock_lang_url_en', [
+		'default'           => '',
+		'sanitize_callback' => 'esc_url_raw',
+	]);
+	$wp_customize->add_control('sunrock_lang_url_en', [
+		'type'        => 'url',
+		'section'     => 'sunrock_auto_modern_language',
+		'label'       => esc_html__('English URL (fallback)', 'sunrock-auto-modern'),
+		'description' => esc_html__('Only needed if you are not using Polylang/WPML.', 'sunrock-auto-modern'),
+	]);
+
+	$wp_customize->add_setting('sunrock_lang_url_zh', [
+		'default'           => '',
+		'sanitize_callback' => 'esc_url_raw',
+	]);
+	$wp_customize->add_control('sunrock_lang_url_zh', [
+		'type'        => 'url',
+		'section'     => 'sunrock_auto_modern_language',
+		'label'       => esc_html__('Traditional Chinese URL (fallback)', 'sunrock-auto-modern'),
+		'description' => esc_html__('Only needed if you are not using Polylang/WPML.', 'sunrock-auto-modern'),
+	]);
+
+	$wp_customize->add_setting('sunrock_lang_label_en', [
+		'default'           => 'English',
+		'sanitize_callback' => 'sanitize_text_field',
+	]);
+	$wp_customize->add_control('sunrock_lang_label_en', [
+		'type'    => 'text',
+		'section' => 'sunrock_auto_modern_language',
+		'label'   => esc_html__('English label', 'sunrock-auto-modern'),
+	]);
+
+	$wp_customize->add_setting('sunrock_lang_label_zh', [
+		'default'           => '繁體中文',
+		'sanitize_callback' => 'sanitize_text_field',
+	]);
+	$wp_customize->add_control('sunrock_lang_label_zh', [
+		'type'    => 'text',
+		'section' => 'sunrock_auto_modern_language',
+		'label'   => esc_html__('Traditional Chinese label', 'sunrock-auto-modern'),
+	]);
+
 	$wp_customize->add_section('sunrock_auto_modern_business', [
 		'title'       => esc_html__('Business Info (Sunrock)', 'sunrock-auto-modern'),
 		'description' => esc_html__('Update contact details, hours, and CTAs used across the site.', 'sunrock-auto-modern'),

@@ -73,6 +73,42 @@ msgstr ""
 msgid "Controls for hero headline and quick highlights."
 msgstr ""
 
+#: inc/customizer.php:15
+msgid "Language Landing (Sunrock)"
+msgstr ""
+
+#: inc/customizer.php:16
+msgid "Create a landing page that lets visitors choose English or Traditional Chinese."
+msgstr ""
+
+#: inc/customizer.php:25
+msgid "Enable language selection on the front page"
+msgstr ""
+
+#: inc/customizer.php:26
+msgid "If enabled, the front page will show a language picker instead of the homepage sections."
+msgstr ""
+
+#: inc/customizer.php:38
+msgid "English URL (fallback)"
+msgstr ""
+
+#: inc/customizer.php:39
+msgid "Only needed if you are not using Polylang/WPML."
+msgstr ""
+
+#: inc/customizer.php:51
+msgid "Traditional Chinese URL (fallback)"
+msgstr ""
+
+#: inc/customizer.php:61
+msgid "English label"
+msgstr ""
+
+#: inc/customizer.php:71
+msgid "Traditional Chinese label"
+msgstr ""
+
 #: inc/customizer.php:75
 msgid "Trusted Auto Repair. Honest Advice. Fast Turnaround."
 msgstr ""
@@ -179,6 +215,22 @@ msgstr ""
 
 #: inc/i18n.php:95
 msgid "Language switcher"
+msgstr ""
+
+#: template-parts/language-landing.php:14
+msgid "Language selection"
+msgstr ""
+
+#: template-parts/language-landing.php:30
+msgid "Choose your language"
+msgstr ""
+
+#: template-parts/language-landing.php:31
+msgid "Please select English or Traditional Chinese to continue."
+msgstr ""
+
+#: template-parts/language-landing.php:55
+msgid "To enable language selection, install Polylang or WPML (recommended), or set the two language URLs in the Customizer."
 msgstr ""
 
 #: front-page.php:32

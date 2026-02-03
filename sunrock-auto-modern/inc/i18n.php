@@ -134,3 +134,98 @@ function sunrock_auto_modern_language_switcher(): void
 	}
 }
 
+/**
+ * Get available languages and their URLs.
+ *
+ * Returns a list like:
+ * [
+ *   ['code' => 'en', 'label' => 'English', 'native' => 'English', 'url' => '...', 'current' => false],
+ *   ...
+ * ]
+ */
+function sunrock_auto_modern_get_languages(): array
+{
+	$langs_out = [];
+
+	// Polylang.
+	if (function_exists('pll_the_languages')) {
+		$langs = pll_the_languages([
+			'raw'           => 1,
+			'show_flags'    => 0,
+			'show_names'    => 1,
+			'hide_if_empty' => 0,
+		]);
+
+		if (is_array($langs)) {
+			foreach ($langs as $lang) {
+				$code = (string) ($lang['slug'] ?? '');
+				$url = (string) ($lang['url'] ?? '');
+				$name = (string) ($lang['name'] ?? '');
+				$native = (string) ($lang['name'] ?? '');
+				if ($code === '' || $url === '') {
+					continue;
+				}
+				$langs_out[] = [
+					'code'    => $code,
+					'label'   => $name ?: strtoupper($code),
+					'native'  => $native ?: ($name ?: strtoupper($code)),
+					'url'     => $url,
+					'current' => !empty($lang['current_lang']),
+				];
+			}
+		}
+	}
+
+	// WPML.
+	if (empty($langs_out) && has_filter('wpml_active_languages')) {
+		$langs = apply_filters('wpml_active_languages', null, ['skip_missing' => 0]);
+		if (is_array($langs)) {
+			foreach ($langs as $lang) {
+				$code = (string) ($lang['language_code'] ?? '');
+				$url = (string) ($lang['url'] ?? '');
+				$name = (string) ($lang['translated_name'] ?? '');
+				$native = (string) ($lang['native_name'] ?? '');
+				if ($code === '' || $url === '') {
+					continue;
+				}
+				$langs_out[] = [
+					'code'    => $code,
+					'label'   => $name ?: strtoupper($code),
+					'native'  => $native ?: ($name ?: strtoupper($code)),
+					'url'     => $url,
+					'current' => !empty($lang['active']),
+				];
+			}
+		}
+	}
+
+	// Fallback (manual URLs in Customizer).
+	if (empty($langs_out)) {
+		$en_url = (string) get_theme_mod('sunrock_lang_url_en', '');
+		$zh_url = (string) get_theme_mod('sunrock_lang_url_zh', '');
+		$en_label = (string) get_theme_mod('sunrock_lang_label_en', 'English');
+		$zh_label = (string) get_theme_mod('sunrock_lang_label_zh', '繁體中文');
+
+		if ($en_url !== '') {
+			$langs_out[] = [
+				'code'    => 'en',
+				'label'   => $en_label ?: 'English',
+				'native'  => $en_label ?: 'English',
+				'url'     => $en_url,
+				'current' => false,
+			];
+		}
+		if ($zh_url !== '') {
+			$langs_out[] = [
+				'code'    => 'zh-tw',
+				'label'   => $zh_label ?: '繁體中文',
+				'native'  => $zh_label ?: '繁體中文',
+				'url'     => $zh_url,
+				'current' => false,
+			];
+		}
+	}
+
+	return $langs_out;
+}
+

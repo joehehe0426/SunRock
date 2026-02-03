@@ -7,6 +7,13 @@
 
 get_header();
 
+$show_lang_landing = (bool) get_theme_mod('sunrock_enable_language_landing', false);
+if ($show_lang_landing) {
+	get_template_part('template-parts/language-landing');
+	get_footer();
+	return;
+}
+
 $phone = sunrock_auto_modern_get_option('sunrock_phone', '');
 $address = sunrock_auto_modern_get_option('sunrock_address', '');
 $maps = sunrock_auto_modern_get_option('sunrock_maps_url', '');

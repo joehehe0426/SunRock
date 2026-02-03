@@ -59,6 +59,33 @@ msgstr "首頁（Sunrock）"
 msgid "Controls for hero headline and quick highlights."
 msgstr "控制首頁主視覺標題與重點標籤。"
 
+msgid "Language Landing (Sunrock)"
+msgstr "語言入口頁（Sunrock）"
+
+msgid "Create a landing page that lets visitors choose English or Traditional Chinese."
+msgstr "建立一個入口頁，讓訪客選擇英文或繁體中文。"
+
+msgid "Enable language selection on the front page"
+msgstr "在首頁啟用語言選擇"
+
+msgid "If enabled, the front page will show a language picker instead of the homepage sections."
+msgstr "啟用後，首頁將顯示語言選擇器，而非一般首頁區塊。"
+
+msgid "English URL (fallback)"
+msgstr "英文連結（備用）"
+
+msgid "Only needed if you are not using Polylang/WPML."
+msgstr "僅在未使用 Polylang/WPML 時需要設定。"
+
+msgid "Traditional Chinese URL (fallback)"
+msgstr "繁體中文連結（備用）"
+
+msgid "English label"
+msgstr "英文標籤"
+
+msgid "Traditional Chinese label"
+msgstr "繁體中文標籤"
+
 msgid "Trusted Auto Repair. Honest Advice. Fast Turnaround."
 msgstr "值得信賴的汽車維修。誠實建議。快速交車。"
 
@@ -139,6 +166,18 @@ msgstr "沒有文章。"
 
 msgid "Language switcher"
 msgstr "語言切換"
+
+msgid "Language selection"
+msgstr "語言選擇"
+
+msgid "Choose your language"
+msgstr "選擇語言"
+
+msgid "Please select English or Traditional Chinese to continue."
+msgstr "請選擇英文或繁體中文以繼續。"
+
+msgid "To enable language selection, install Polylang or WPML (recommended), or set the two language URLs in the Customizer."
+msgstr "要啟用語言選擇，請安裝 Polylang 或 WPML（建議），或在自訂器設定兩個語言的連結。"
 
 msgid "Auto Repair & Maintenance"
 msgstr "汽車維修與保養"
