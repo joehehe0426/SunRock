@@ -1,0 +1,244 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sunrock Auto Modern 1.0.0\n"
+"POT-Creation-Date: 2026-02-03 00:00+0000\n"
+"PO-Revision-Date: 2026-02-03 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Primary Menu"
+msgstr "主選單"
+
+msgid "Footer Menu"
+msgstr "頁尾選單"
+
+msgid "Footer Widgets"
+msgstr "頁尾小工具"
+
+msgid "Widgets shown in the footer."
+msgstr "顯示於頁尾的小工具。"
+
+msgid "Business Info (Sunrock)"
+msgstr "店家資訊（Sunrock）"
+
+msgid "Update contact details, hours, and CTAs used across the site."
+msgstr "更新全站使用的聯絡方式、營業時間與行動呼籲（CTA）。"
+
+msgid "Phone number"
+msgstr "電話"
+
+msgid "Email"
+msgstr "電子郵件"
+
+msgid "Address"
+msgstr "地址"
+
+msgid "Google Maps URL"
+msgstr "Google 地圖連結"
+
+msgid "Hours (short)"
+msgstr "營業時間（簡短）"
+
+msgid "Booking / Request Quote URL"
+msgstr "預約／詢價連結"
+
+msgid "Contact form shortcode (optional)"
+msgstr "聯絡表單短代碼（選填）"
+
+msgid "Paste a shortcode from your form plugin (e.g., Contact Form 7)."
+msgstr "貼上表單外掛的短代碼（例如 Contact Form 7）。"
+
+msgid "Homepage (Sunrock)"
+msgstr "首頁（Sunrock）"
+
+msgid "Controls for hero headline and quick highlights."
+msgstr "控制首頁主視覺標題與重點標籤。"
+
+msgid "Trusted Auto Repair. Honest Advice. Fast Turnaround."
+msgstr "值得信賴的汽車維修。誠實建議。快速交車。"
+
+msgid "Hero headline"
+msgstr "主視覺標題"
+
+msgid "From oil changes to diagnostics and brakes—we keep your car safe, reliable, and road‑ready."
+msgstr "從換機油到電腦診斷與煞車維修，讓您的愛車安全可靠、隨時上路。"
+
+msgid "Hero subheadline"
+msgstr "主視覺副標"
+
+msgid "Certified technicians"
+msgstr "專業認證技師"
+
+msgid "Highlight 1"
+msgstr "重點 1"
+
+msgid "Digital inspections"
+msgstr "數位化檢測"
+
+msgid "Highlight 2"
+msgstr "重點 2"
+
+msgid "Warranty-backed work"
+msgstr "保固保障"
+
+msgid "Highlight 3"
+msgstr "重點 3"
+
+msgid "Skip to content"
+msgstr "跳至內容"
+
+msgid "Toggle menu"
+msgstr "切換選單"
+
+msgid "Menu"
+msgstr "選單"
+
+msgid "Primary menu"
+msgstr "主選單"
+
+msgid "Request a Quote"
+msgstr "立即詢價"
+
+msgid "Hours"
+msgstr "營業時間"
+
+msgid "Footer menu"
+msgstr "頁尾選單"
+
+msgid "© %s "
+msgstr "© %s "
+
+msgid "Built on %s"
+msgstr "採用 %s 建置"
+
+msgid "Nothing found"
+msgstr "找不到內容"
+
+msgid "Try a search or check back soon."
+msgstr "請嘗試搜尋，或稍後再回來看看。"
+
+msgid "Page not found"
+msgstr "找不到頁面"
+
+msgid "The page you’re looking for doesn’t exist. Try the menu or search below."
+msgstr "您要找的頁面不存在。請使用選單或下方搜尋。"
+
+msgid "Search results for “%s”"
+msgstr "「%s」的搜尋結果"
+
+msgid "No results. Try a different search."
+msgstr "沒有結果，請改用其他關鍵字。"
+
+msgid "No posts found."
+msgstr "沒有文章。"
+
+msgid "Language switcher"
+msgstr "語言切換"
+
+msgid "Auto Repair & Maintenance"
+msgstr "汽車維修與保養"
+
+msgid "Book Service"
+msgstr "立即預約"
+
+msgid "Call Now"
+msgstr "立即致電"
+
+msgid "Quick info"
+msgstr "快速資訊"
+
+msgid "Visit or Contact"
+msgstr "到店／聯絡"
+
+msgid "Fast help for urgent issues and easy scheduling for everything else."
+msgstr "緊急狀況快速協助，其餘項目也能輕鬆預約。"
+
+msgid "Phone"
+msgstr "電話"
+
+msgid "Services"
+msgstr "服務項目"
+
+msgid "Everything your vehicle needs—done right."
+msgstr "愛車需要的一切服務，一次到位。"
+
+msgid "Clear explanations, quality parts, and workmanship you can trust."
+msgstr "清楚說明、優質零件、值得信賴的工法。"
+
+msgid "Get a Quote"
+msgstr "取得報價"
+
+msgid "Diagnostics"
+msgstr "電腦診斷"
+
+msgid "Check engine light, no-start, strange noises—pinpoint the cause with modern tools."
+msgstr "引擎燈亮、無法發動、異音等問題，使用現代化設備精準找出原因。"
+
+msgid "Brakes & Safety"
+msgstr "煞車與安全"
+
+msgid "Brake pads, rotors, fluid service and inspections to keep you confident on the road."
+msgstr "煞車皮、碟盤、煞車油保養與檢查，讓您上路更安心。"
+
+msgid "Maintenance"
+msgstr "定期保養"
+
+msgid "Oil changes, fluids, filters and scheduled maintenance to prevent bigger repairs."
+msgstr "換機油、油水、濾芯與定期保養，預防大修發生。"
+
+msgid "Electrical"
+msgstr "電系維修"
+
+msgid "Battery, alternator, starters and charging issues—tested and repaired correctly."
+msgstr "電瓶、發電機、啟動馬達與充電系統問題，完整檢測、正確修復。"
+
+msgid "A/C & Heating"
+msgstr "冷氣與暖氣"
+
+msgid "Stay comfortable year-round with accurate A/C diagnostics and repairs."
+msgstr "透過精準冷氣診斷與維修，四季都舒適。"
+
+msgid "Pre‑Trip Checks"
+msgstr "行前檢查"
+
+msgid "Quick inspection before long drives: tires, brakes, fluids and lights."
+msgstr "長途出發前快速檢查：輪胎、煞車、油水與燈具。"
+
+msgid "Why choose us"
+msgstr "為何選擇我們"
+
+msgid "Modern service with old‑school honesty."
+msgstr "現代化服務，老派的誠實。"
+
+msgid "We focus on clear communication, smart diagnostics, and doing the job right the first time."
+msgstr "我們重視清楚溝通、精準診斷，並一次把事情做好。"
+
+msgid "Straightforward recommendations (no pressure)."
+msgstr "建議透明不施壓。"
+
+msgid "Quality parts and warranty-backed workmanship."
+msgstr "優質零件與保固工法。"
+
+msgid "Fast scheduling and status updates."
+msgstr "快速預約與進度更新。"
+
+msgid "Contact"
+msgstr "聯絡我們"
+
+msgid "Let’s get your car back to 100%."
+msgstr "讓愛車回到最佳狀態。"
+
+msgid "Send a message, request a quote, or call us—whatever’s easiest."
+msgstr "傳訊息、詢價或直接致電都可以，怎麼方便怎麼來。"
+
+msgid "Tip: add a contact form plugin (e.g., Contact Form 7) and paste its shortcode in the Customizer to show a form here."
+msgstr "提示：安裝聯絡表單外掛（例如 Contact Form 7），並在自訂器貼上短代碼即可在此顯示表單。"
+
+msgid "Call"
+msgstr "致電"
+
